@@ -319,14 +319,14 @@ export const SCHEMAS = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     'name': 'Khaya Residences Bangsar',
-    'url': 'https://www.khayaresidencesbangsar.com',
+    'url': 'https://khaya-residence.my',
     'description': 'Explore Khaya Residences Bangsar, a modern serviced residence strategically located between Bangsar, Mid Valley and KL Sentral. Developed by Melati Ehsan Group on TNB Land.'
   },
   localBusiness: {
     '@context': 'https://schema.org',
     '@type': 'RealEstateListingService',
     'name': 'Khaya Residences Private Advisory - Shyan Yee Ren (REN 46305)',
-    'image': 'https://www.khayaresidencesbangsar.com/logo.jpg',
+    'image': 'https://khaya-residence.my/logo.jpg',
     'telephone': '+60195598932',
     'email': 'shyanyeews@gmail.com',
     'address': {
@@ -341,7 +341,7 @@ export const SCHEMAS = {
       'latitude': 3.1205,
       'longitude': 101.6789
     },
-    'url': 'https://www.khayaresidencesbangsar.com'
+    'url': 'https://khaya-residence.my'
   },
   breadcrumb: {
     '@context': 'https://schema.org',
@@ -351,25 +351,25 @@ export const SCHEMAS = {
         '@type': 'ListItem',
         'position': 1,
         'name': 'Home',
-        'item': 'https://www.khayaresidencesbangsar.com'
+        'item': 'https://khaya-residence.my'
       },
       {
         '@type': 'ListItem',
         'position': 2,
         'name': 'Project Overview',
-        'item': 'https://www.khayaresidencesbangsar.com#overview'
+        'item': 'https://khaya-residence.my#overview'
       },
       {
         '@type': 'ListItem',
         'position': 3,
         'name': 'Floor Layouts',
-        'item': 'https://www.khayaresidencesbangsar.com#layouts'
+        'item': 'https://khaya-residence.my#layouts'
       },
       {
         '@type': 'ListItem',
         'position': 4,
         'name': 'Contact Consultation',
-        'item': 'https://www.khayaresidencesbangsar.com#contact'
+        'item': 'https://khaya-residence.my#contact'
       }
     ]
   },
@@ -408,6 +408,35 @@ export const SCHEMAS = {
         '@type': 'RealEstateAgent',
         'name': 'Shyan Yee (IQI REALTY SDN. BHD.)',
         'telephone': '+60195598932'
+      }
+    }
+  },
+  realEstateListing: {
+    '@context': 'https://schema.org',
+    '@type': 'RealEstateListing',
+    'name': 'Khaya Residences Bangsar (Khaya Tree Residences) Serviced Apartment for Sale',
+    'url': 'https://khaya-residence.my',
+    'description': 'Direct developer pricing for Khaya Residences (Khaya Tree Residences) Bangsar. Explore floor layouts, strategic connectivity to Mid Valley and KL Sentral, and secure your private viewing consultation with registered agent Shyan Yee.',
+    'datePosted': '2026-06-27',
+    'offers': {
+      '@type': 'Offer',
+      'priceCurrency': 'MYR',
+      'price': '650000',
+      'priceSpecification': {
+        '@type': 'UnitPriceSpecification',
+        'price': '650000',
+        'priceCurrency': 'MYR',
+        'referenceQuantity': {
+          '@type': 'QuantitativeValue',
+          'value': 1,
+          'unitCode': 'C62'
+        }
+      },
+      'offeredBy': {
+        '@type': 'RealEstateAgent',
+        'name': 'Shyan Yee (IQI REALTY SDN. BHD.)',
+        'telephone': '+60195598932',
+        'url': 'https://khaya-residence.my'
       }
     }
   }

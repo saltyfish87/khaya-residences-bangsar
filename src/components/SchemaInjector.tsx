@@ -3,10 +3,11 @@ import { SCHEMAS } from '../data/projectData';
 
 export default function SchemaInjector() {
   useEffect(() => {
-    // Generate script tags for each schema
+    // Generate script tags for each schema (including BreadcrumbList and RealEstateListing)
     const scripts: HTMLScriptElement[] = [];
 
     Object.entries(SCHEMAS).forEach(([key, schemaObj]) => {
+      // Ensure we verify correct types and domains for local search visibility
       const script = document.createElement('script');
       script.id = `jsonld-schema-${key}`;
       script.type = 'application/ld+json';
