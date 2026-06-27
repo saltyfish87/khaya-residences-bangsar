@@ -1,0 +1,6 @@
+{
+  "name": "Khaya Residences Bangsar",
+  "description": "Explore Khaya Residences Bangsar, a modern serviced residence strategically located between Bangsar, Mid Valley and KL Sentral. Discover layouts, facilities, connectivity, gallery and project information. Privately managed by Shyan Yee (REN 46305) under IQI REALTY SDN. BHD. (1113417U / 201401037274).",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

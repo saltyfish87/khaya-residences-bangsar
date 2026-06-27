@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  
+  --color-brand-charcoal: #061D21; /* Rich premium dark blue-green luxury color (深蓝绿) */
+  --color-brand-gold: #E5C158;     /* Luxurious high-contrast bright gold */
+  --color-brand-gold-dark: #C59F30;
+  --color-brand-bg: #FAF9F6;       /* Luxurious, premium soft white/cream background (白米色) */
+  --color-brand-white: #FFFFFF;    /* Pristine clean white for cards & light text in dark footer */
+  --color-brand-cream: #F4F3EE;    /* Lighter elegant soft warm gray/cream */
+  
+  --color-slate-950: #041416;      /* Super dark premium blue-green */
+  --color-slate-900: #061D21;      /* Rich dark blue-green matching brand-charcoal */
+  --color-slate-800: #0C3138;      /* Mid-dark blue-green */
+  --color-slate-700: #1C3E44;      /* High contrast body text for dark background */
+}
+
+/* Base styles for premium typography and high contrast */
+html {
+  scroll-behavior: smooth;
+  background-color: #FAF9F6;
+  color: #1A2F33;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #FAF9F6;
+  color: #1A2F33;
+}
+
+/* Enforcing high visibility/contrast text on backgrounds */
+h1, h2, h3, h4, h5, h6 {
+  color: #061D21;
+  font-weight: 600;
+}
+
+/* Custom premium scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF9F6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C59F30;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8F6E36;
+}
+
+/* Elegant glass navbar adapted to dark green-blue */
+.glass-nav {
+  background-color: rgba(6, 29, 33, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Premium Card hover states */
+.premium-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.premium-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -15px rgba(6, 29, 33, 0.08);
+}
+
+/* Gold radial glow effects */
+.radial-glow {
+  background: radial-gradient(circle at center, rgba(229, 193, 88, 0.15) 0%, transparent 70%);
+}
+
+/* Soft gold-tinted image overlays */
+.gold-overlay {
+  background: linear-gradient(to bottom, rgba(6, 29, 33, 0.1) 0%, rgba(6, 29, 33, 0.8) 100%);
+}
+
+/* Custom layout card styling */
+.layout-card {
+  transition: all 0.4s ease;
+}
+
+.layout-card:hover {
+  border-color: rgba(229, 193, 88, 0.5);
+  box-shadow: 0 12px 30px rgba(6, 29, 33, 0.06);
+}
+
+/* Keyframe animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Hero background animation */
+@keyframes soft-pan-zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-hero-background {
+  animation: soft-pan-zoom 25s ease-in-out infinite;
+}
+
+/* 
+==========================================================================
+   EXPLICIT WCAG CONTRAST COMPLIANCE DEFAULTS (No !important overrides)
+==========================================================================
+*/
+
+/* Light theme default colors */
+html, body {
+  background-color: #FAF9F6;
+  color: #1A2F33;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #061D21;
+}
+
+/* Clean defaults for dark background sections so text remains perfectly visible */
+.bg-brand-charcoal,
+.bg-slate-950,
+.bg-slate-900,
+footer {
+  color: #FAF9F6;
+}
+
+.bg-brand-charcoal h1,
+.bg-brand-charcoal h2,
+.bg-brand-charcoal h3,
+.bg-brand-charcoal h4,
+.bg-brand-charcoal h5,
+.bg-brand-charcoal h6,
+.bg-slate-950 h1,
+.bg-slate-950 h2,
+.bg-slate-950 h3,
+.bg-slate-900 h1,
+.bg-slate-900 h2,
+footer h1,
+footer h2,
+footer h3,
+footer h4 {
+  color: #FFFFFF;
+}
+
+/* Ensure paragraph text in dark sections defaults to highly legible light slate */
+.bg-brand-charcoal p,
+.bg-slate-950 p,
+.bg-slate-900 p,
+footer p {
+  color: #E2E8F0;
+}
