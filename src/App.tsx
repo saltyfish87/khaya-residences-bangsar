@@ -28,6 +28,7 @@ import FacilitiesSection from './components/FacilitiesSection';
 import GallerySection from './components/GallerySection';
 import ContactForm from './components/ContactForm';
 import SchemaInjector from './components/SchemaInjector';
+import FAQsSection from './components/FAQsSection';
 import { KEY_FEATURES, FACILITIES } from './data/projectData';
 
 // Cleaned up imports
@@ -445,7 +446,8 @@ export default function App() {
       {/* 9. PORTFOLIO VISUAL GALLERY */}
       <GallerySection />
 
-
+      {/* 10. FREQUENTLY ASKED QUESTIONS */}
+      <FAQsSection />
 
       {/* 12. IMMERSIVE CONTACT CONSULTATION & ENQUIRY REGISTRATION (Honeypot, Captcha Verify, Agent Profiles) */}
       <section id="contact" className="py-20 sm:py-24 bg-brand-bg transition-all">

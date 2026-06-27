@@ -273,43 +273,53 @@ export const FACILITIES: FacilityItem[] = [
 export const FAQS: FAQItem[] = [
   {
     id: 'faq-1',
-    question: 'What is Khaya Residences Bangsar?',
-    answer: 'Khaya Residences (also known as Khaya Tree Bangsar) is a premium serviced residence development strategically placed along Jalan Bangsar. It features a single 61-storey tower consisting of 795 residential suites and a curated boutique retail podium.'
+    question: 'What is the tenure of Khaya Residences?',
+    answer: 'Khaya Residences is a 99-Year Leasehold serviced residence, offering stable, high-end long-term living built on prime TNB-owned land under a prestigious joint development.'
   },
   {
     id: 'faq-2',
-    question: 'Where is Khaya Residences located?',
-    answer: 'It is highly strategically situated along Jalan Bangsar in Kuala Lumpur, immediately bridging the established municipal triangle of Bangsar, Mid Valley City, and Kuala Lumpur Sentral. It places residents directly within a highly connectivity-focused central transit district.'
+    question: 'When is the expected completion of the project?',
+    answer: 'The estimated completion date for Khaya Residences is Q2 2029, giving buyers ample time for progressive payment and financial planning.'
   },
   {
     id: 'faq-3',
-    question: 'Who is the developer and landowner of the project?',
-    answer: 'The project is developed by the Melati Ehsan Group, an established community builder, on prime private real estate owned by Tenaga Nasional Berhad (TNB).'
+    question: 'Is Khaya Residences freehold or leasehold?',
+    answer: 'It is a 99-Year Leasehold development. It is built in cooperation with Tenaga Nasional Berhad (TNB) as the landowner, ensuring high security, compliance, and institutional-grade planning.'
   },
   {
     id: 'faq-4',
-    question: 'How far is Khaya Residences from the nearest transit hubs?',
-    answer: 'The development lies within comfortable walking distance (approximately 400 meters or 6 minutes walk) from the Abdullah Hukum LRT & KTM Station. This station links directly to KL Eco City and is just 1 LRT stop away from KL Sentral, which is only 2.5km away.'
+    question: 'What is Khaya Residences Bangsar?',
+    answer: 'Khaya Residences (also known as Khaya Tree Residences or Khaya Tree Residence) is a premium, single-block 61-storey serviced apartment development consisting of 795 luxury residential suites and a curated boutique retail podium.'
   },
   {
     id: 'faq-5',
-    question: 'What are the available layout choices and sizes?',
-    answer: 'We offer five meticulously planned layout designations: Type A (1 Bedroom, 630 sqft), Type B (2 Bedroom, 772 sqft), Type C (2+1 Bedroom, 980 sqft), Type D (3 Bedroom, 1,100 sqft), and Type E (3+1 Bedroom, 1,321 sqft).'
+    question: 'Where is Khaya Residences located?',
+    answer: 'It is strategically situated along Jalan Bangsar in Kuala Lumpur, immediately bridging the highly sought-after transit and commercial zones of Bangsar, Mid Valley City, and Kuala Lumpur Sentral.'
   },
   {
     id: 'faq-6',
-    question: 'What amenities are included in selected units?',
-    answer: 'Premium units come exceptionally appointed with high-tier built-in features including customized overhead kitchen cabinets, premium cooker hood & hob, inverter air conditioning units, household refrigerator, and luxury branded bathroom sanitary fittings.'
+    question: 'Who is the developer of the project?',
+    answer: 'The project is developed by the highly reputable Melati Ehsan Group, an established community builder in Malaysia known for deliverable excellence.'
   },
   {
     id: 'faq-7',
-    question: 'Who is this development primarily suitable for?',
-    answer: 'Due to its strategic proximity to elite corporate districts, transportation junctions, and premium lifestyle amenities, the project represents an ideal residential opportunity for upwardly-mobile young professionals, double-income-no-kids (DINK) couples, regional expatriates, and medical tourism buyers seeking convenient urban accessibility.'
+    question: 'How far is Khaya Residences from the nearest transit hubs?',
+    answer: 'The development is located just approximately 400 meters (about a 6-minute walk) from the Abdullah Hukum LRT & KTM Station. It is also just 1 LRT stop away from the major KL Sentral transportation hub.'
   },
   {
     id: 'faq-8',
-    question: 'Are there guarantees regarding rental yields or investments?',
-    answer: 'No. In absolute congruence with transparent ethical advertising and advertising guidelines, all material indicators are provided purely for educational reference. We do not provide, promise, or assure guaranteed appreciating values, guaranteed financial returns, or set rental outcomes. Interested buyers are strongly encouraged to undertake independent market analyses and consult our certified agent representatives.'
+    question: 'What are the available layout choices and sizes?',
+    answer: 'We offer five meticulously planned layouts: Type A (1 Bedroom, 630 sqft), Type B (2 Bedroom, 772 sqft), Type C (2+1 Bedroom, 980 sqft), Type D (3 Bedroom, 1,100 sqft), and Type E (3+1 Bedroom, 1,321 sqft).'
+  },
+  {
+    id: 'faq-9',
+    question: 'What premium fittings are included in selected units?',
+    answer: 'Premium units come exceptionally appointed with high-tier built-in features including customized kitchen cabinets, premium cooker hood and hob, energy-saving inverter air conditioning units, household refrigerator, and luxury branded sanitary fittings.'
+  },
+  {
+    id: 'faq-10',
+    question: 'Who is this development primarily suitable for?',
+    answer: 'It is ideal for young professionals, growing families, corporate executives, and real estate investors looking for high capital appreciation and strong rental demand near major commercial hubs like Mid Valley and KL Sentral.'
   }
 ];
 
