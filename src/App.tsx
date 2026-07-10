@@ -79,7 +79,7 @@ export default function App() {
       canonical.setAttribute('rel', 'canonical');
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute('href', 'https://khaya-residence.my');
+    canonical.setAttribute('href', 'https://khaya-residence.my/');
 
     // 4. Scroll position monitor for floating widgets
     const handleScroll = () => {

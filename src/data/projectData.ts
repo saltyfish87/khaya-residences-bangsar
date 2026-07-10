@@ -92,124 +92,124 @@ export const DESTINATIONS: { category: string; list: NeighborDestination[] }[] =
 
 export const LAYOUTS: LayoutType[] = [
   {
-    type: 'Type A (1 Bedroom)',
+    type: 'Type A (1+1 Bedroom)',
+    size: '772 sqft',
+    rooms: '1+1 Bedrooms',
+    baths: '1 Bathroom',
+    carpark: '1 Bay',
+    features: ['Kitchen Cabinets', 'Hood & Hob', 'Air Conditioners', 'Private Balcony', 'Branded Sanitaryware'],
+    imageUrl: 'https://drive.google.com/thumbnail?id=1KmHUekij4IxMibN1QDW1gN7BroOGXYH_&sz=w1000',
+    description: 'A larger compact home with balcony space for natural ventilation, suited to expatriates and owner-occupiers who want more living flexibility.'
+  },
+  {
+    type: 'Type B (1 Bedroom)',
     size: '630 sqft',
     rooms: '1 Bedroom',
     baths: '1 Bathroom',
     carpark: '1 Bay',
     features: ['Kitchen Cabinets', 'Hood & Hob', 'Air Conditioners', 'Branded Sanitaryware'],
-    imageUrl: 'https://drive.google.com/thumbnail?id=1KmHUekij4IxMibN1QDW1gN7BroOGXYH_&sz=w1000',
-    description: 'Efficient contemporary layout designed selectively for single business professionals or minimalist urban couples.'
+    imageUrl: 'https://drive.google.com/thumbnail?id=1fZA5DP_fgSliYqNhCrfiKnKKD4ukSp3D&sz=w1000',
+    description: 'Efficient 1-bedroom planning for first-home buyers, singles, frequent travellers and rental-focused Bangsar investors.'
   },
   {
-    type: 'Type B (2 Bedroom)',
-    size: '772 sqft',
+    type: 'Type C (1+1 Bedroom)',
+    size: '683 sqft',
+    rooms: '1+1 Bedrooms',
+    baths: '1 Bathroom',
+    carpark: '1 Bay',
+    features: ['Kitchen Cabinets', 'Hood & Hob', 'Air Conditioners', 'Flexible Utility Zone', 'Branded Sanitaryware'],
+    imageUrl: 'https://drive.google.com/thumbnail?id=11MEEPUfV4bBVzvPTG6bh6MQjlsx-SRRm&sz=w1000',
+    description: 'The +1 room works naturally as a home office, guest room or flexible storage zone for hybrid professionals.'
+  },
+  {
+    type: 'Type D (2 Bedroom)',
+    size: '869 sqft',
     rooms: '2 Bedrooms',
     baths: '2 Bathrooms',
     carpark: '1-2 Bays',
     features: ['Kitchen Cabinets', 'Hood & Hob', 'Air Conditioners', 'Refrigerator', 'Branded Sanitaryware'],
-    imageUrl: 'https://drive.google.com/thumbnail?id=1fZA5DP_fgSliYqNhCrfiKnKKD4ukSp3D&sz=w1000',
-    description: 'Comfortably balanced functional framework suitable for young working families or active city-dwellers.'
+    imageUrl: 'https://drive.google.com/thumbnail?id=18VrwTYiHqbYBslVFhVEWUF0oFYw_ySJ1&sz=w1000',
+    description: 'A practical 2-bedroom, 2-bathroom layout for couples, small households and buyers who need better privacy.'
   },
   {
-    type: 'Type C (2+1 Bedroom)',
-    size: '980 sqft',
+    type: 'Type E (2+1 Bedroom)',
+    size: '998 sqft',
+    rooms: '2+1 Bedrooms',
+    baths: '2 Bathrooms',
+    carpark: '1-2 Bays',
+    features: ['Kitchen Cabinets', 'Hood & Hob', 'Air Conditioners', 'Refrigerator', 'Private Balcony', 'Branded Sanitaryware'],
+    imageUrl: 'https://drive.google.com/thumbnail?id=1-lf_OLm5kQBwPtQqUbmzm0eh8ZJymZBE&sz=w1000',
+    description: 'A family-friendly plan with a +1 room that can support a nursery, study, helper room or hobby space.'
+  },
+  {
+    type: 'Type F (2+1 Bedroom)',
+    size: '1,032 sqft',
     rooms: '2+1 Bedrooms',
     baths: '2 Bathrooms',
     carpark: '2 Bays',
-    features: ['Kitchen Cabinets', 'Hood & Hob', 'Air Conditioners', 'Refrigerator', 'Home Shelter/Flexi Room', 'Branded Sanitaryware'],
-    imageUrl: 'https://drive.google.com/thumbnail?id=11MEEPUfV4bBVzvPTG6bh6MQjlsx-SRRm&sz=w1000',
-    description: 'Includes a dedicated multi-purpose flexible room that converts seamlessly into a home study suite or utility storage.'
+    features: ['Full Kitchen Cabinetry', 'Hood & Hob', 'Air Conditioners', 'Premium Refrigerator', 'Branded Sanitaryware', 'Yard Area'],
+    imageUrl: 'https://drive.google.com/thumbnail?id=1pIoYJsv6LMB6RriAgHQzRhwgThZu73Xe&sz=w1000',
+    description: 'A larger 2+1 layout with stronger family function, giving owner-occupiers more flexibility for a study, child room or helper zone.'
   },
   {
-    type: 'Type D (3 Bedroom)',
-    size: '1,100 sqft',
+    type: 'Type G (3 Bedroom)',
+    size: '1,086 sqft',
     rooms: '3 Bedrooms',
+    baths: '3 Bathrooms',
+    carpark: '2 Bays',
+    features: ['Premium Kitchen Cabinets', 'Premium Hood & Hob', 'Multi-room Air Conditioners', 'Dual-Door Refrigerator', 'Luxury Branded Bathroom Fittings', 'Spacious Maid/Utility Room'],
+    imageUrl: 'https://drive.google.com/thumbnail?id=1OMF4wB3KxreTQHn3vVjmSvvF82d_evNE&sz=w1000',
+    description: 'A true family layout where every bedroom has nearby bathroom access, useful for upgraders and multi-person households.'
+  },
+  {
+    type: 'Type H (2+2 Bedroom)',
+    size: '1,028 sqft',
+    rooms: '2+2 Bedrooms',
     baths: '2 Bathrooms',
     carpark: '2 Bays',
-    features: ['Full Kitchen Cabinetry', 'Hood & Hob', 'Air Conditioners', 'Premium Refrigerator', 'Branded Sanitaryware', 'Yard Area'],
-    imageUrl: 'https://drive.google.com/thumbnail?id=18VrwTYiHqbYBslVFhVEWUF0oFYw_ySJ1&sz=w1000',
-    description: 'Generously proportioned family-sized apartments equipped with clear zoning of semi-private work and cooking spaces.'
+    features: ['Dual-Key Entry Foyer', 'Separate Studio Option', 'Full Kitchen Cabinets', 'Multiple Air Conditioners', 'Multi-tier Security Access'],
+    imageUrl: 'https://drive.google.com/thumbnail?id=1gcHT-stSNtc9VevYgVOEDfiTUMc1SGPL&sz=w1000',
+    description: 'A flexible premium layout that suits families and work-from-home buyers who want extra rooms without moving into the largest unit types.'
   },
   {
-    type: 'Type E (3+1 Bedroom)',
-    size: '1,321 sqft',
+    type: 'Type I (1+1 Bedroom)',
+    size: '1,096 sqft',
+    rooms: '1+1 Bedrooms',
+    baths: '2 Bathrooms',
+    carpark: '2 Bays',
+    features: ['Premium Kitchen Cabinets', 'Premium Hood & Hob', 'Multi-room Air Conditioners', 'Dual-Door Refrigerator', 'Luxury Fittings', 'Maid Room'],
+    imageUrl: 'https://drive.google.com/thumbnail?id=1sFXtfoA7pK4p87tBNfbunhJf39KmHV6A&sz=w1000',
+    description: 'A wider 1+1-bedroom plan for buyers who want generous living proportions, flexible study space and two-bathroom practicality.'
+  },
+  {
+    type: 'Type J (2 Bedroom)',
+    size: '1,070 sqft',
+    rooms: '2 Bedrooms',
+    baths: '2 Bathrooms',
+    carpark: '2 Bays',
+    features: ['Dual-Key Architecture', 'Helper Quarters', 'Granite Kitchen Island', 'Luxury Sanitary Fittings', 'Double-glazed Living Glass'],
+    imageUrl: 'https://drive.google.com/thumbnail?id=1kX9pZxSSTQRKS4JVoFJ2U5tYLaDNH_Rg&sz=w1000',
+    description: 'A larger hosting-friendly layout with a luxury bathroom feature and expansive dining space.'
+  },
+  {
+    type: 'Type K (3+1 Bedroom)',
+    size: '1,164 sqft',
     rooms: '3+1 Bedrooms',
+    baths: '2 Bathrooms',
+    carpark: '2 Bays',
+    features: ['Panoramic Corner View', 'Luxury Wet & Dry Kitchen', 'Ductless Multi-Splits Aircon', 'Dual Master Suites', 'Private Entrance Lobby'],
+    imageUrl: 'https://drive.google.com/thumbnail?id=1teNpZQnI2RoNxzI9SrB9KLCiEcsjfvWU&sz=w1000',
+    description: 'A spacious home with utility flexibility, suited to larger families and residents who need helper or storage space.'
+  },
+  {
+    type: 'Type L (3 Bedroom)',
+    size: '1,321 sqft',
+    rooms: '3 Bedrooms',
     baths: '3 Bathrooms',
     carpark: '2 Bays (Side-by-Side)',
-    features: ['Premium Kitchen Cabinets', 'Premium Hood & Hob', 'Multi-room Air Conditioners', 'Dual-Door Refrigerator', 'Luxury Branded Bathroom Fittings', 'Spacious Maid/Utility Room'],
-    imageUrl: 'https://drive.google.com/thumbnail?id=1-lf_OLm5kQBwPtQqUbmzm0eh8ZJymZBE&sz=w1000',
-    description: 'The ultimate signature layout layout. Features generous modern spaces with dedicated helper quarters and deep panoramic balconies.'
-  },
-  {
-    type: 'Type F (4 Bedroom)',
-    size: '1,400 sqft',
-    rooms: '4 Bedrooms',
-    baths: '3 Bathrooms',
-    carpark: '2-3 Bays',
-    features: ['Premium Kitchen Cabinets', 'Premium Hood & Hob', 'Multi-room Air Conditioners', 'Dual-Door Refrigerator', 'Luxury Fittings', 'Maid Room'],
-    imageUrl: 'https://drive.google.com/thumbnail?id=1pIoYJsv6LMB6RriAgHQzRhwgThZu73Xe&sz=w1000',
-    description: 'Spacious 4-bedroom executive suite designed for growing modern multi-generational families with clear ventilation views.'
-  },
-  {
-    type: 'Type G (4 Bed Dual-Key)',
-    size: '1,480 sqft',
-    rooms: '4 Bedrooms',
-    baths: '4 Bathrooms',
-    carpark: '2-3 Bays',
-    features: ['Dual-Key Entry Foster', 'Separate Studio Unit', 'Full Kitchen Cabinets', 'Multiple Air Conditioners', 'Multi-tier Security Access'],
-    imageUrl: 'https://drive.google.com/thumbnail?id=1OMF4wB3KxreTQHn3vVjmSvvF82d_evNE&sz=w1000',
-    description: 'Versatile dual-key design configured with a separate self-contained studio flatlet perfect for independent living/in-laws or rental income.'
-  },
-  {
-    type: 'Type H (4+1 Bed Dual-Key)',
-    size: '1,550 sqft',
-    rooms: '4+1 Bedrooms',
-    baths: '4 Bathrooms',
-    carpark: '3 Bays',
-    features: ['Dual-Key Architecture', 'Helper Quarters', 'Granite Kitchen Island', 'Luxury Sanitary Fittings', 'Double-glazed Living Glass'],
-    imageUrl: 'https://drive.google.com/thumbnail?id=1gcHT-stSNtc9VevYgVOEDfiTUMc1SGPL&sz=w1000',
-    description: 'Premium massive dual-key residence featuring separate entry configurations alongside dedicated housemaid suites and premium private foyers.'
-  },
-  {
-    type: 'Type I (4+1 Bed Executive)',
-    size: '1,620 sqft',
-    rooms: '4+1 Bedrooms',
-    baths: '4 Bathrooms',
-    carpark: '3 Bays (Side-by-Side)',
-    features: ['Panoramic Corner View', 'Luxury Wet & Dry Kitchen', 'Ductless Multi-Splits Aircon', 'Dual Master Suites', 'Private Entrance Lobby'],
-    imageUrl: 'https://drive.google.com/thumbnail?id=1sFXtfoA7pK4p87tBNfbunhJf39KmHV6A&sz=w1000',
-    description: 'Ultra-spacious corner luxury design containing multiple master bedroom modules and direct high-performance gourmet wet & dry cooking zones.'
-  },
-  {
-    type: 'Type J (5 Bed Penthouse)',
-    size: '1,700 sqft',
-    rooms: '5 Bedrooms',
-    baths: '5 Bathrooms',
-    carpark: '3-4 Bays',
-    features: ['Sky Villa Penthouse Layout', 'Direct Horizon Views', 'Luxury Fitted Bathrooms', 'Premium Wardrobes', 'Home Automation Hub'],
-    imageUrl: 'https://drive.google.com/thumbnail?id=1kX9pZxSSTQRKS4JVoFJ2U5tYLaDNH_Rg&sz=w1000',
-    description: 'Sky-mansion style penthouse layout offering generous social dining areas, panoramic master suites, and bespoke design finishes.'
-  },
-  {
-    type: 'Type K (5+1 Bed Penthouse)',
-    size: '1,820 sqft',
-    rooms: '5+1 Bedrooms',
-    baths: '5 Bathrooms',
-    carpark: '4 Bays',
-    features: ['Exclusive Top-floor Residence', 'Double Volume High Ceilings', 'Full Smart Home Access', 'Gourmet Kitchen Island', 'Maid Quarters'],
-    imageUrl: 'https://drive.google.com/thumbnail?id=1teNpZQnI2RoNxzI9SrB9KLCiEcsjfvWU&sz=w1000',
-    description: 'Stately high-floor sky villa. Contains double height living walls, integrated air recycling flow, and massive floor-to-ceiling panoramic glass.'
-  },
-  {
-    type: 'Type L (Grand Family Penthouse)',
-    size: '1,950 sqft',
-    rooms: '5+1 Bedrooms',
-    baths: '5 Bathrooms',
-    carpark: '4 Bays (Private Hub)',
-    features: ['Ultimate Penthouse Prestige', 'Wrap-around Balcony', 'Imported European Appliances', 'Fully Ducted Central AC', 'Private Foyer Lobby'],
+    features: ['Ultimate Prestige Layout', 'Wrap-around Balcony', 'Imported European Appliances', 'Fully Ducted Central AC', 'Private Foyer Lobby'],
     imageUrl: 'https://drive.google.com/thumbnail?id=1ig2BIXn7cLDus_-6I3Bhij0vbhCmQFAn&sz=w1000',
-    description: 'Oversized flagship model with beautiful wrap-around glass terraces, imported timber cabinetry, and smart card private elevator access.'
+    description: 'The signature large layout with stronger spatial proportion, premium bathroom comfort and broad family appeal.'
   }
 ];
 
@@ -309,7 +309,7 @@ export const FAQS: FAQItem[] = [
   {
     id: 'faq-8',
     question: 'What are the available layout choices and sizes?',
-    answer: 'We offer five meticulously planned layouts: Type A (1 Bedroom, 630 sqft), Type B (2 Bedroom, 772 sqft), Type C (2+1 Bedroom, 980 sqft), Type D (3 Bedroom, 1,100 sqft), and Type E (3+1 Bedroom, 1,321 sqft).'
+    answer: 'We offer twelve meticulously planned layouts (Types A to L), with built-up sizes ranging from 630 to 1,321 sqft. Key options include Type B (1 Bed, 630 sqft), Type C (1+1 Beds, 683 sqft), Type A (1+1 Beds, 772 sqft), Type D (2 Beds, 869 sqft), Type E (2+1 Beds, 998 sqft), and Type L (3 Beds, 1,321 sqft).'
   },
   {
     id: 'faq-9',
@@ -334,7 +334,7 @@ export const SCHEMAS = {
   },
   localBusiness: {
     '@context': 'https://schema.org',
-    '@type': 'RealEstateListingService',
+    '@type': 'RealEstateAgent',
     'name': 'Khaya Residences Private Advisory - Shyan Yee Ren (REN 46305)',
     'image': 'https://khaya-residence.my/logo.jpg',
     'telephone': '+60195598932',
@@ -397,7 +397,7 @@ export const SCHEMAS = {
   },
   propertyListing: {
     '@context': 'https://schema.org',
-    '@type': 'RealEstateProject',
+    '@type': 'ApartmentComplex',
     'name': 'Khaya Residences Bangsar',
     'description': 'Luxury serviced apartments in Jalan Bangsar, Kuala Lumpur near Mid Valley & KL Sentral.',
     'address': {
