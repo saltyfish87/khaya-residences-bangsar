@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { LAYOUTS } from '../data/projectData';
 import { LayoutType } from '../types';
-import { Maximize2, BedDouble, Bath, Car, Check, ChevronRight } from 'lucide-react';
+import { Maximize2, BedDouble, Bath, Car, Check, ChevronRight, MessageSquare } from 'lucide-react';
 
 interface LayoutsSectionProps {
   onSelectLayout: (layoutType: string) => void;
@@ -105,13 +105,15 @@ export default function LayoutsSection({ onSelectLayout }: LayoutsSectionProps) 
                 </div>
 
                 <div className="pt-6 border-t border-slate-100">
-                  <button
-                    onClick={() => onSelectLayout(activeLayout.type)}
-                    className="bg-slate-900 hover:bg-brand-gold text-white hover:text-slate-900 w-full py-3.5 rounded-xl text-xs font-bold tracking-widest uppercase transition-all duration-300 flex items-center justify-center space-x-2 group cursor-pointer"
+                  <a
+                    href={`https://wa.me/60195598932?text=${encodeURIComponent(`[KHAYA RESIDENCES] Hi, I would like to inquire about Layout ${activeLayout.type} (${activeLayout.size}, ${activeLayout.rooms}) at Khaya Residences Bangsar.`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-slate-900 hover:bg-brand-gold text-white hover:text-slate-900 w-full py-3.5 rounded-xl text-xs font-bold tracking-widest uppercase transition-all duration-300 flex items-center justify-center space-x-2 group cursor-pointer animate-pulse-subtle"
                   >
-                    <span>REQUEST DETAILS FOR {activeLayout.type.split(" ")[0]}</span>
-                    <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-                  </button>
+                    <MessageSquare className="w-4 h-4" />
+                    <span>INQUIRE VIA WHATSAPP</span>
+                  </a>
                 </div>
               </div>
 
@@ -182,15 +184,16 @@ export default function LayoutsSection({ onSelectLayout }: LayoutsSectionProps) 
                   {zoomImage.size} | {zoomImage.rooms}
                 </p>
               </div>
-              <button 
-                onClick={() => {
-                  setZoomImage(null);
-                  onSelectLayout(zoomImage.type);
-                }}
-                className="bg-brand-gold hover:bg-slate-900 text-white py-2 px-4 rounded-xl text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer"
+              <a 
+                href={`https://wa.me/60195598932?text=${encodeURIComponent(`[KHAYA RESIDENCES] Hi, I would like to inquire about Layout ${zoomImage.type} (${zoomImage.size}, ${zoomImage.rooms}) at Khaya Residences Bangsar.`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setZoomImage(null)}
+                className="bg-brand-gold hover:bg-slate-900 text-white py-2.5 px-5 rounded-xl text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer flex items-center space-x-1.5"
               >
-                Inquire Layout
-              </button>
+                <MessageSquare className="w-3.5 h-3.5" />
+                <span>Inquire on WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>

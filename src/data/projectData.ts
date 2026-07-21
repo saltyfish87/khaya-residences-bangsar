@@ -233,7 +233,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: 'Facilities',
     title: '50m Horizon Infinity Lap Pool',
     description: 'A striking Olympic-length reservoir offering stunning infinity views of the regional cityscapes.',
-    imageUrl: 'https://drive.google.com/thumbnail?id=1BGyaHMCMYvn6stvmufMqBvIBnFdVjZ-G&sz=w1200'
+    imageUrl: 'https://assets.cdn.filesafe.space/lACwR9t89exHjDBEit6g/media/6a2281cb49e55f85196e75ef.webp'
   },
   {
     id: 'gal-4',

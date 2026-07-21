@@ -29,8 +29,8 @@ export default function FacilitiesSection() {
       title: "50-Meter Infinity Horizon Pool",
       category: "Primary Level Facility",
       desc: "A tranquil, elevated aquatic terrace seamlessly integrating lounge chairs, lush shade trees, and spectacular open-sky orientation.",
-      thumbnailUrl: "https://drive.google.com/thumbnail?id=14mXmvDW4uOljA9O3uQnrbFA2RsjPPq7X&sz=w1200",
-      largeUrl: "https://drive.google.com/thumbnail?id=14mXmvDW4uOljA9O3uQnrbFA2RsjPPq7X&sz=w1600"
+      thumbnailUrl: "https://assets.cdn.filesafe.space/lACwR9t89exHjDBEit6g/media/6a2281cb49e55f85196e75ef.webp",
+      largeUrl: "https://assets.cdn.filesafe.space/lACwR9t89exHjDBEit6g/media/6a2281cb49e55f85196e75ef.webp"
     },
     {
       id: 'skydeck',
