@@ -14,20 +14,19 @@ export default function FAQsSection() {
   const visibleFaqs = showAll ? FAQS : FAQS.slice(0, 3);
 
   return (
-    <section id="faqs" className="py-20 sm:py-24 bg-slate-50 transition-all border-t border-slate-100">
+    <section id="faqs" className="py-20 sm:py-28 bg-brand-bg transition-all border-t border-stone-300/60">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Title */}
-        <div className="text-center mb-12 sm:mb-16">
-          <span className="text-[10px] tracking-widest font-extrabold text-brand-gold uppercase block mb-3">
-            HAVE QUESTIONS?
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-xs uppercase tracking-[0.38em] font-medium text-brand-gold block mb-3">
+            Questions & Answers
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight font-bold mb-4">
+          <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-brand-charcoal tracking-tight font-light">
             Frequently Asked Questions
           </h2>
-          <div className="w-16 h-1 bg-brand-gold mx-auto mb-6" />
-          <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto font-sans">
-            Find immediate answers about the tenure, estimated completion date, developer details, layouts, and premium amenities of Khaya Residences Bangsar.
+          <p className="text-sm sm:text-base text-slate-800 mt-4 leading-relaxed font-sans font-light max-w-xl mx-auto">
+            Find immediate details regarding tenure, timeline, developer background, layouts, and amenities.
           </p>
         </div>
 
@@ -43,10 +42,10 @@ export default function FAQsSection() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -15 }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
-                  className={`rounded-2xl border transition-all duration-300 ${
+                  className={`border transition-all duration-300 ${
                     isOpen 
-                      ? 'bg-white border-brand-gold/40 shadow-sm' 
-                      : 'bg-white border-slate-100 hover:border-brand-gold/30'
+                      ? 'bg-brand-white border-brand-charcoal shadow-xs' 
+                      : 'bg-brand-white border-stone-300/60 hover:border-brand-charcoal/60'
                   }`}
                   id={`faq-card-${faq.id}`}
                 >
@@ -60,12 +59,12 @@ export default function FAQsSection() {
                       <HelpCircle className={`w-5 h-5 shrink-0 mt-0.5 transition-colors ${
                         isOpen ? 'text-brand-gold' : 'text-slate-400 group-hover:text-brand-gold'
                       }`} />
-                      <span className="font-serif text-sm sm:text-base text-slate-900 font-bold leading-relaxed">
+                      <span className="font-serif text-base sm:text-lg text-brand-charcoal font-light leading-snug">
                         {faq.question}
                       </span>
                     </div>
-                    <div className={`p-1.5 rounded-lg transition-transform duration-300 ${
-                      isOpen ? 'bg-brand-gold/10 text-brand-gold rotate-180' : 'bg-slate-100 text-slate-500 group-hover:bg-brand-gold/10 group-hover:text-brand-gold'
+                    <div className={`p-1.5 transition-transform duration-300 ${
+                      isOpen ? 'bg-brand-gold/10 text-brand-gold rotate-180' : 'bg-stone-100 text-slate-600 group-hover:bg-brand-gold/10 group-hover:text-brand-gold'
                     }`}>
                       {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                     </div>
@@ -77,7 +76,7 @@ export default function FAQsSection() {
                       isOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'
                     }`}
                   >
-                    <div className="p-5 sm:p-6 pt-0 border-t border-slate-50 text-xs sm:text-sm text-slate-700 leading-relaxed font-sans font-medium">
+                    <div className="p-5 sm:p-6 pt-0 border-t border-stone-200 text-xs sm:text-sm text-slate-800 leading-relaxed font-sans font-light">
                       {faq.answer}
                     </div>
                   </div>
@@ -91,7 +90,7 @@ export default function FAQsSection() {
         <div className="mt-10 text-center">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-slate-900 hover:bg-brand-gold text-white hover:text-slate-900 font-extrabold text-[10px] tracking-widest uppercase transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer"
+            className="btn-solid inline-flex items-center space-x-2 px-8 py-3.5 bg-brand-charcoal hover:bg-brand-gold text-brand-white hover:text-brand-charcoal text-xs tracking-[0.22em] uppercase font-semibold transition-all duration-300 shadow-xs cursor-pointer border border-brand-charcoal"
             id="faq-toggle-more-btn"
           >
             <span>{showAll ? 'Show Fewer Questions' : 'See More Questions'}</span>

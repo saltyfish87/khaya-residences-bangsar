@@ -64,14 +64,14 @@ export default function Header({ whatsappUrl }: HeaderProps) {
       id="site-header"
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b ${
         scrolled 
-          ? 'bg-brand-charcoal/95 backdrop-blur-md border-[#D4AF37]/15 py-3 shadow-md' 
-          : 'bg-transparent border-transparent py-4'
+          ? 'bg-black/90 backdrop-blur-md border-stone-800/80 py-3 shadow-md text-white' 
+          : 'bg-black/50 backdrop-blur-md border-white/10 py-4 text-white'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Brand Logo - Beautiful Google Drive Logo */}
+          {/* Brand Logo */}
           <div 
             onClick={() => scrollToSection('home')}
             className="flex items-center space-x-3 cursor-pointer group"
@@ -79,19 +79,19 @@ export default function Header({ whatsappUrl }: HeaderProps) {
             <img 
               src="https://drive.google.com/thumbnail?id=18qdXyQJ2ywPyrZ79Me_KgOK2S-9bIvK0&sz=w200" 
               alt="Khaya Residences Logo" 
-              className="w-10 h-10 rounded-full object-cover shadow-md border border-brand-gold/40 transition-transform duration-500 group-hover:scale-105"
+              className="w-10 h-10 rounded-full object-cover shadow-xs border border-brand-gold/60 transition-transform duration-500 group-hover:scale-105"
               referrerPolicy="no-referrer"
             />
             <div>
-              <span className="font-serif text-lg tracking-widest block font-bold leading-none transition-colors duration-300 text-white">
+              <span className="font-serif text-lg tracking-widest block font-bold leading-none text-white transition-colors duration-300">
                 KHAYA
               </span>
-              <span className="text-[9px] uppercase tracking-[0.25em] block mt-1 leading-none font-bold transition-colors duration-300 text-brand-gold">
+              <span className="text-[9px] uppercase tracking-[0.25em] block mt-1 leading-none font-bold text-brand-gold transition-colors duration-300">
                 RESIDENCES BANGSAR
               </span>
             </div>
           </div>
- 
+
           {/* Desktop Navigation links */}
           <nav className="hidden lg:flex items-center space-x-1">
             {navItems.map((item) => (
@@ -101,8 +101,8 @@ export default function Header({ whatsappUrl }: HeaderProps) {
                 onClick={() => scrollToSection(item.id)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-bold tracking-widest transition-all duration-300 relative uppercase ${
                   activeSection === item.id 
-                    ? 'text-brand-gold bg-slate-950/30' 
-                    : 'text-slate-200 hover:text-brand-gold hover:bg-white/10'
+                    ? 'text-brand-gold bg-white/10' 
+                    : 'text-stone-200 hover:text-brand-gold hover:bg-white/10'
                 }`}
               >
                 {item.label}
@@ -112,37 +112,37 @@ export default function Header({ whatsappUrl }: HeaderProps) {
               </button>
             ))}
           </nav>
- 
+
           {/* Mobile Hamburger button */}
           <div className="flex lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-xl focus:outline-none transition-colors text-white hover:text-brand-gold hover:bg-white/10"
+              className="inline-flex items-center justify-center p-2 rounded-xl focus:outline-none transition-colors text-white hover:text-brand-gold"
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
- 
+
         </div>
       </div>
  
       {/* Mobile Drawer menu */}
       <div 
-        className={`lg:hidden fixed inset-y-0 right-0 w-full max-w-sm bg-brand-charcoal/98 backdrop-blur-md border-l border-[#D4AF37]/15 z-40 transform transition-transform duration-500 ease-in-out ${
+        className={`lg:hidden fixed inset-y-0 right-0 w-full max-w-sm bg-black/95 backdrop-blur-md border-l border-stone-800 z-40 transform transition-transform duration-500 ease-in-out ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         style={{ top: '64px' }}
       >
-        <div className="px-5 py-6 space-y-3 flex flex-col h-full bg-brand-charcoal">
+        <div className="px-5 py-6 space-y-3 flex flex-col h-full bg-black/95 text-white">
           {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`w-full text-left py-3.5 border-b border-slate-800 text-xs font-bold tracking-widest transition-all uppercase ${
+              className={`w-full text-left py-3.5 border-b border-stone-800 text-xs font-bold tracking-widest transition-all uppercase ${
                 activeSection === item.id 
                   ? 'text-brand-gold pl-2 border-brand-gold/40' 
-                  : 'text-slate-300 hover:text-white hover:pl-2'
+                  : 'text-stone-200 hover:text-brand-gold hover:pl-2'
               }`}
             >
               {item.label}
@@ -150,7 +150,7 @@ export default function Header({ whatsappUrl }: HeaderProps) {
           ))}
           
           <div className="pt-6 mt-auto">
-            <div className="text-[10px] text-slate-400 text-center pt-2 leading-relaxed font-sans font-medium">
+            <div className="text-[10px] text-stone-400 text-center pt-2 leading-relaxed font-sans font-medium">
               Shyan Yee · REN 46305 · IQI REALTY SDN. BHD. (1113417U / 201401037274)
             </div>
           </div>

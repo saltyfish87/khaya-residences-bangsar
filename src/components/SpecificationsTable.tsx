@@ -1,42 +1,37 @@
 import { SPECIFICATIONS } from '../data/projectData';
-import { Landmark, ShieldAlert } from 'lucide-react';
 
 export default function SpecificationsTable() {
   return (
-    <div className="bg-white rounded-2xl border border-brand-gold/15 p-6 sm:p-8 shadow-xs">
-      <div className="flex items-center space-x-3 mb-6 pb-4 border-b border-brand-gold/10">
-        <div className="p-2 rounded-lg bg-brand-gold/10 text-brand-gold">
-          <Landmark className="w-5 h-5" />
-        </div>
-        <div>
-          <h4 className="font-serif text-base text-slate-800 tracking-wide font-bold">
-            Technical Details
-          </h4>
-        </div>
+    <div className="bg-brand-white p-6 sm:p-8 border border-stone-300/60 shadow-xs">
+      <div className="mb-6 pb-4 border-b border-stone-300/60">
+        <span className="text-[10px] tracking-[0.35em] uppercase text-brand-gold font-medium block">
+          Project Essentials
+        </span>
+        <h3 className="font-serif text-xl text-brand-charcoal mt-1 font-light">
+          Key Specifications
+        </h3>
       </div>
 
-      <div className="flex flex-col divide-y divide-brand-gold/10">
+      <ul className="divide-y divide-stone-300/60 text-sm">
         {SPECIFICATIONS.map((spec, index) => (
-          <div 
+          <li 
             key={index} 
-            className="flex items-center justify-between py-3"
+            className="flex items-center justify-between py-3.5 gap-4"
           >
-            <span className="text-[10px] tracking-wider uppercase text-slate-500 font-bold font-sans">
+            <span className="text-xs uppercase tracking-wider text-slate-800 font-medium font-sans">
               {spec.label}
             </span>
-            <span className="text-xs font-bold text-slate-800 text-right">
+            <span className="font-serif text-base font-normal text-brand-charcoal text-right">
               {spec.value}
             </span>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
 
-      <div className="mt-6 p-4 rounded-xl bg-slate-50 border border-brand-gold/15 flex items-start space-x-2.5 text-[10px] text-slate-600 leading-normal">
-        <ShieldAlert className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-        <p>
-          <strong className="text-slate-800">Transparency:</strong> Details checked against the master plan submitting filings for Khaya Residences. Land governed by TNB leasehold agreements under Melati Ehsan Group orchestration.
-        </p>
+      <div className="mt-6 pt-4 border-t border-stone-300/60 text-xs text-slate-800 leading-relaxed font-sans font-light">
+        <span className="text-brand-gold font-medium">Notice:</span> Details verified against master plan filings for Khaya Residences Bangsar under Melati Ehsan Group orchestration.
       </div>
     </div>
   );
 }
+

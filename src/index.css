@@ -1,42 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-sans: "Jost", "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
   
-  --color-brand-charcoal: #061D21; /* Rich premium dark blue-green luxury color (深蓝绿) */
-  --color-brand-gold: #E5C158;     /* Luxurious high-contrast bright gold */
-  --color-brand-gold-dark: #C59F30;
-  --color-brand-bg: #FAF9F6;       /* Luxurious, premium soft white/cream background (白米色) */
-  --color-brand-white: #FFFFFF;    /* Pristine clean white for cards & light text in dark footer */
-  --color-brand-cream: #F4F3EE;    /* Lighter elegant soft warm gray/cream */
+  --color-brand-charcoal: #0C2420; /* Deep Emerald Pine from accent-petalingjaya */
+  --color-brand-emerald: #0C2420;  /* Rich Dark Emerald Pine */
+  --color-brand-emerald-dark: #061311; /* Midnight Emerald Obsidian */
+  --color-brand-gold: #CBA358;     /* Polished Champagne Metallic Gold */
+  --color-brand-gold-dark: #9E7B35;
+  --color-brand-gold-light: #F0DFB7;
+  --color-brand-bg: #FAF8F5;       /* Crisp Alabaster White Cream */
+  --color-brand-white: #FFFFFF;    /* Pure White */
+  --color-brand-cream: #EFECE4;    /* Soft Warm Linen Accent */
   
-  --color-slate-950: #041416;      /* Super dark premium blue-green */
-  --color-slate-900: #061D21;      /* Rich dark blue-green matching brand-charcoal */
-  --color-slate-800: #0C3138;      /* Mid-dark blue-green */
-  --color-slate-700: #1C3E44;      /* High contrast body text for dark background */
+  --color-slate-950: #061311;      /* Deepest Pine Obsidian */
+  --color-slate-900: #0C2420;      /* Primary Deep Emerald Pine */
+  --color-slate-800: #14352F;      /* Mid Emerald Pine */
+  --color-slate-700: #2C4A44;      /* Muted Pine Slate */
 }
 
-/* Base styles for premium typography and high contrast */
+/* Base styles for accent-petalingjaya luxury aesthetic */
 html {
   scroll-behavior: smooth;
-  background-color: #FAF9F6;
-  color: #1A2F33;
+  background-color: #FAF8F5;
+  color: #1A2E2A;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background-color: #FAF9F6;
-  color: #1A2F33;
+  background-color: #FAF8F5;
+  color: #1A2E2A;
 }
 
-/* Enforcing high visibility/contrast text on backgrounds */
+::selection {
+  background: #CBA358;
+  color: #FFFFFF;
+}
+
+/* Enforcing typography hierarchy */
 h1, h2, h3, h4, h5, h6 {
-  color: #061D21;
-  font-weight: 600;
+  color: #0C2420;
+  font-weight: 500;
 }
 
 /* Custom premium scrollbars */
@@ -46,20 +54,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-track {
-  background: #FAF9F6;
+  background: #FAF8F5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C59F30;
+  background: #CBA358;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8F6E36;
+  background: #9E7B35;
 }
 
-/* Elegant glass navbar adapted to dark green-blue */
+/* Glass navbar in deep black */
 .glass-nav {
-  background-color: rgba(6, 29, 33, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -70,18 +78,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .premium-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px -15px rgba(6, 29, 33, 0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.12);
 }
 
-/* Gold radial glow effects */
+/* Taupe radial glow effects */
 .radial-glow {
-  background: radial-gradient(circle at center, rgba(229, 193, 88, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(168, 151, 124, 0.18) 0%, transparent 70%);
 }
 
-/* Soft gold-tinted image overlays */
+/* Black image overlays */
 .gold-overlay {
-  background: linear-gradient(to bottom, rgba(6, 29, 33, 0.1) 0%, rgba(6, 29, 33, 0.8) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%);
 }
 
 /* Custom layout card styling */
@@ -90,8 +98,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .layout-card:hover {
-  border-color: rgba(229, 193, 88, 0.5);
-  box-shadow: 0 12px 30px rgba(6, 29, 33, 0.06);
+  border-color: rgba(168, 151, 124, 0.5);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* Keyframe animations */
@@ -125,20 +133,14 @@ h1, h2, h3, h4, h5, h6 {
   animation: soft-pan-zoom 25s ease-in-out infinite;
 }
 
-/* 
-==========================================================================
-   EXPLICIT WCAG CONTRAST COMPLIANCE DEFAULTS (No !important overrides)
-==========================================================================
-*/
-
 /* Light theme default colors */
 html, body {
-  background-color: #FAF9F6;
-  color: #1A2F33;
+  background-color: #FAF8F5;
+  color: #1A2E2A;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #061D21;
+  color: #0C2420;
 }
 
 /* Clean defaults for dark background sections so text remains perfectly visible */
@@ -146,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 .bg-slate-950,
 .bg-slate-900,
 footer {
-  color: #FAF9F6;
+  color: #FFFFFF;
 }
 
 .bg-brand-charcoal h1,
@@ -167,10 +169,10 @@ footer h4 {
   color: #FFFFFF;
 }
 
-/* Ensure paragraph text in dark sections defaults to highly legible light slate */
+/* Ensure paragraph text in dark sections defaults to highly legible light ivory */
 .bg-brand-charcoal p,
 .bg-slate-950 p,
 .bg-slate-900 p,
 footer p {
-  color: #E2E8F0;
+  color: #EFECE4;
 }
