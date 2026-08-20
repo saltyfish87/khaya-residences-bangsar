@@ -77,10 +77,9 @@ export default function Header({ whatsappUrl }: HeaderProps) {
             className="flex items-center space-x-3 cursor-pointer group"
           >
             <img 
-              src="https://drive.google.com/thumbnail?id=18qdXyQJ2ywPyrZ79Me_KgOK2S-9bIvK0&sz=w200" 
+              src="/favicon.png" 
               alt="Khaya Residences Logo" 
               className="w-10 h-10 rounded-full object-cover shadow-xs border border-brand-gold/60 transition-transform duration-500 group-hover:scale-105"
-              referrerPolicy="no-referrer"
             />
             <div>
               <span className="font-serif text-lg tracking-widest block font-bold leading-none text-white transition-colors duration-300">

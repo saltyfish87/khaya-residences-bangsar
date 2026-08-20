@@ -38,7 +38,7 @@ export default function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [activeLegalModal, setActiveLegalModal] = useState<'disclaimer' | 'privacy' | 'terms' | null>(null);
 
-  const whatsappUrl = "https://wa.me/60195598932?text=[KHAYA]%20Hi,%20I%20would%20like%20to%20know%20more%20about%20Khaya%20Residences%20Bangsar.";
+  const whatsappUrl = "https://wa.me/60108278932?text=[KHAYA]%20Hi,%20I%20would%20like%20to%20know%20more%20about%20Khaya%20Residences%20Bangsar.";
 
   // Dynamic SEO & Meta Injections on Mount
   useEffect(() => {
@@ -506,11 +506,11 @@ export default function App() {
 
                 <div className="space-y-3">
                   <a 
-                    href="tel:+60195598932"
+                    href="tel:+60108278932"
                     className="flex items-center space-x-3 p-4 bg-brand-white border border-stone-300/60 hover:border-brand-charcoal transition-colors text-xs tracking-wider text-brand-charcoal font-medium"
                   >
                     <Phone className="w-4 h-4 text-brand-gold shrink-0" />
-                    <span>019-5598932</span>
+                    <span>010-8278932</span>
                   </a>
                   <a 
                     href="mailto:shyanyeews@gmail.com"
@@ -604,7 +604,7 @@ export default function App() {
               <div className="text-xs text-stone-400 space-y-2 leading-relaxed font-light">
                 <p><strong>Agency:</strong> IQI REALTY SDN. BHD. (1113417U / 201401037274)</p>
                 <p><strong>Licensing:</strong> Shyan Yee (REN 46305)</p>
-                <p><strong>Contact:</strong> +6019-5598932</p>
+                <p><strong>Contact:</strong> +6010-8278932</p>
                 <p><strong>Email:</strong> shyanyeews@gmail.com</p>
               </div>
             </div>

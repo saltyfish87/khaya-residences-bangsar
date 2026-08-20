@@ -337,7 +337,7 @@ export const SCHEMAS = {
     '@type': 'RealEstateAgent',
     'name': 'Khaya Residences Private Advisory - Shyan Yee Ren (REN 46305)',
     'image': 'https://khaya-residence.my/logo.jpg',
-    'telephone': '+60195598932',
+    'telephone': '+60108278932',
     'email': 'shyanyeews@gmail.com',
     'address': {
       '@type': 'PostalAddress',
@@ -417,7 +417,7 @@ export const SCHEMAS = {
       'offeredBy': {
         '@type': 'RealEstateAgent',
         'name': 'Shyan Yee (IQI REALTY SDN. BHD.)',
-        'telephone': '+60195598932'
+        'telephone': '+60108278932'
       }
     }
   },
@@ -445,7 +445,7 @@ export const SCHEMAS = {
       'offeredBy': {
         '@type': 'RealEstateAgent',
         'name': 'Shyan Yee (IQI REALTY SDN. BHD.)',
-        'telephone': '+60195598932',
+        'telephone': '+60108278932',
         'url': 'https://khaya-residence.my'
       }
     }

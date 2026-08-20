@@ -93,7 +93,7 @@ export default function LayoutsSection({ onSelectLayout }: LayoutsSectionProps) 
 
             <div className="pt-4">
               <a
-                href={`https://wa.me/60195598932?text=${encodeURIComponent(`[KHAYA RESIDENCES] Hi, I would like to inquire about Layout ${activeLayout.type} (${activeLayout.size}, ${activeLayout.rooms}) at Khaya Residences Bangsar.`)}`}
+                href={`https://wa.me/60108278932?text=${encodeURIComponent(`[KHAYA RESIDENCES] Hi, I would like to inquire about Layout ${activeLayout.type} (${activeLayout.size}, ${activeLayout.rooms}) at Khaya Residences Bangsar.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-solid inline-flex items-center justify-center space-x-2 bg-brand-charcoal text-brand-white border border-brand-charcoal px-8 py-4 text-xs tracking-[0.24em] uppercase transition-all duration-300 w-full hover:bg-transparent hover:text-brand-charcoal cursor-pointer"
@@ -164,7 +164,7 @@ export default function LayoutsSection({ onSelectLayout }: LayoutsSectionProps) 
                 </p>
               </div>
               <a 
-                href={`https://wa.me/60195598932?text=${encodeURIComponent(`[KHAYA RESIDENCES] Hi, I would like to inquire about Layout ${zoomImage.type} (${zoomImage.size}, ${zoomImage.rooms}) at Khaya Residences Bangsar.`)}`}
+                href={`https://wa.me/60108278932?text=${encodeURIComponent(`[KHAYA RESIDENCES] Hi, I would like to inquire about Layout ${zoomImage.type} (${zoomImage.size}, ${zoomImage.rooms}) at Khaya Residences Bangsar.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setZoomImage(null)}
