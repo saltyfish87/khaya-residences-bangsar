@@ -329,14 +329,18 @@ export const SCHEMAS = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     'name': 'Khaya Residences Bangsar',
-    'url': 'https://khaya-residence.my',
+    'url': 'https://www.khaya-residence.my',
     'description': 'Explore Khaya Residences Bangsar, a modern serviced residence strategically located between Bangsar, Mid Valley and KL Sentral. Developed by Melati Ehsan Group on TNB Land.'
   },
   localBusiness: {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
-    'name': 'Khaya Residences Private Advisory - Shyan Yee Ren (REN 46305)',
-    'image': 'https://khaya-residence.my/logo.jpg',
+    'name': 'Yee Woei Shyan (Shyan Yee), REN 46305 – IQI Realty Sdn Bhd',
+    'alternateName': 'Khaya Residences Private Advisory',
+    'identifier': 'REN 46305',
+    'parentOrganization': { '@type': 'Organization', 'name': 'IQI Realty Sdn Bhd' },
+    'sameAs': ['https://www.youtube.com/@shyanyee', 'https://www.instagram.com/shyanyee/', 'https://www.facebook.com/shyanyeeconsultant/', 'https://wa.me/60108278932'],
+    'image': 'https://www.khaya-residence.my/logo.jpg',
     'telephone': '+60108278932',
     'email': 'shyanyeews@gmail.com',
     'address': {
@@ -351,7 +355,7 @@ export const SCHEMAS = {
       'latitude': 3.1205,
       'longitude': 101.6789
     },
-    'url': 'https://khaya-residence.my'
+    'url': 'https://www.khaya-residence.my'
   },
   breadcrumb: {
     '@context': 'https://schema.org',
@@ -361,25 +365,25 @@ export const SCHEMAS = {
         '@type': 'ListItem',
         'position': 1,
         'name': 'Home',
-        'item': 'https://khaya-residence.my'
+        'item': 'https://www.khaya-residence.my'
       },
       {
         '@type': 'ListItem',
         'position': 2,
         'name': 'Project Overview',
-        'item': 'https://khaya-residence.my#overview'
+        'item': 'https://www.khaya-residence.my#overview'
       },
       {
         '@type': 'ListItem',
         'position': 3,
         'name': 'Floor Layouts',
-        'item': 'https://khaya-residence.my#layouts'
+        'item': 'https://www.khaya-residence.my#layouts'
       },
       {
         '@type': 'ListItem',
         'position': 4,
         'name': 'Contact Consultation',
-        'item': 'https://khaya-residence.my#contact'
+        'item': 'https://www.khaya-residence.my#contact'
       }
     ]
   },
@@ -411,9 +415,21 @@ export const SCHEMAS = {
       '@type': 'Place',
       'name': 'Kuala Lumpur'
     },
+    'url': 'https://www.khaya-residence.my',
+    'numberOfAccommodationUnits': 795,
+    'floorSize': { '@type': 'QuantitativeValue', 'minValue': 630, 'maxValue': 1321, 'unitCode': 'FTK' },
+    'additionalProperty': [
+      { '@type': 'PropertyValue', 'name': 'Developer', 'value': 'Melati Ehsan Group' },
+      { '@type': 'PropertyValue', 'name': 'Landowner', 'value': 'Tenaga Nasional Berhad' },
+      { '@type': 'PropertyValue', 'name': 'Tenure', 'value': '99-Year Leasehold' },
+      { '@type': 'PropertyValue', 'name': 'Land title', 'value': 'Commercial under HDA' },
+      { '@type': 'PropertyValue', 'name': 'Configuration', 'value': '1 tower, 61 storeys' },
+      { '@type': 'PropertyValue', 'name': 'Estimated completion', 'value': 'Q2 2029' }
+    ],
     'offers': {
       '@type': 'AggregateOffer',
       'priceCurrency': 'MYR',
+      'lowPrice': '650000',
       'offeredBy': {
         '@type': 'RealEstateAgent',
         'name': 'Shyan Yee (IQI REALTY SDN. BHD.)',
@@ -425,7 +441,7 @@ export const SCHEMAS = {
     '@context': 'https://schema.org',
     '@type': 'RealEstateListing',
     'name': 'Khaya Residences Bangsar (Khaya Tree Residences) Serviced Apartment for Sale',
-    'url': 'https://khaya-residence.my',
+    'url': 'https://www.khaya-residence.my',
     'description': 'Direct developer pricing for Khaya Residences (Khaya Tree Residences) Bangsar. Explore floor layouts, strategic connectivity to Mid Valley and KL Sentral, and secure your private viewing consultation with registered agent Shyan Yee.',
     'datePosted': '2026-06-27',
     'offers': {
@@ -446,7 +462,7 @@ export const SCHEMAS = {
         '@type': 'RealEstateAgent',
         'name': 'Shyan Yee (IQI REALTY SDN. BHD.)',
         'telephone': '+60108278932',
-        'url': 'https://khaya-residence.my'
+        'url': 'https://www.khaya-residence.my'
       }
     }
   }

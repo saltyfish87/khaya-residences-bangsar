@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://khaya-residence.my/sitemap.xml
+Sitemap: https://www.khaya-residence.my/sitemap.xml

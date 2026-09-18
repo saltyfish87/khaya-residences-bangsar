@@ -3,6 +3,8 @@ import { SCHEMAS } from '../data/projectData';
 
 export default function SchemaInjector() {
   useEffect(() => {
+    // index.html already carries the same schema statically (id="seo-static-graph"); avoid duplicating it.
+    if (document.getElementById('seo-static-graph')) return;
     // Generate script tags for each schema (including BreadcrumbList and RealEstateListing)
     const scripts: HTMLScriptElement[] = [];
 
