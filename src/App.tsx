@@ -707,6 +707,7 @@ export default function App() {
 
           <div className="mt-8 pt-4 border-t border-stone-800 text-center flex flex-col md:flex-row items-center justify-between text-[11px] text-stone-400 font-light">
             <p>Copyright © {currentYear} Shyan Yee. All Rights Reserved.</p>
+            <p className="mt-2">Also listed on <a href="https://www.propertyportal.my/project/khaya-bangsar" className="underline">propertyportal.my: Khaya Residence</a> · <a href="https://www.propertyportal.my/" className="underline">all Kuala Lumpur new launches</a>.</p>
             <p className="tracking-widest uppercase text-[10px] font-mono text-brand-gold mt-1 md:mt-0">
               REN 46305 · IQI REALTY SDN. BHD.
             </p>
