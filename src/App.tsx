@@ -718,20 +718,6 @@ export default function App() {
 
       {/* 14. FLOATING CTA WIDGETS */}
       <div className="fixed bottom-6 right-6 z-40 flex flex-col space-y-2.5">
-        <AnimatePresence>
-          {showScrollTop && (
-            <motion.button
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1.0 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              onClick={handleScrollToTop}
-              className="w-10 h-10 bg-brand-charcoal text-brand-gold hover:text-brand-white border border-stone-700 flex items-center justify-center transition-colors cursor-pointer"
-              aria-label="Back to Top"
-            >
-              <ArrowUp className="w-4 h-4" />
-            </motion.button>
-          )}
-        </AnimatePresence>
 
         <a
           href={whatsappUrl}
