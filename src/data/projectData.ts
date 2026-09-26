@@ -339,7 +339,7 @@ export const SCHEMAS = {
     'alternateName': 'Khaya Residences Private Advisory',
     'identifier': 'REN 46305',
     'parentOrganization': { '@type': 'Organization', 'name': 'IQI Realty Sdn Bhd' },
-    'sameAs': ['https://www.youtube.com/@shyanyee', 'https://www.instagram.com/shyanyee/', 'https://www.facebook.com/shyanyeeconsultant/', 'https://wa.me/60108278932'],
+    'sameAs': ['https://maps.google.com/?cid=3195643739952877602', 'https://www.youtube.com/@shyanyee', 'https://www.instagram.com/shyanyee/', 'https://www.facebook.com/shyanyeeconsultant/', 'https://wa.me/60108278932'],
     'image': 'https://www.khaya-residence.my/logo.jpg',
     'telephone': '+60108278932',
     'email': 'shyanyeews@gmail.com',
